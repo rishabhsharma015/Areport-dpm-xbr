@@ -23,6 +23,7 @@ public class DomToArray {
         return output;
     }
 
+    @SuppressWarnings("unchecked")
     private static Map<String, Object> domnodeToArray(Node node) {
         Map<String, Object> output = new HashMap<>();
         switch (node.getNodeType()) {
